@@ -1,0 +1,61 @@
+/* Shared geometry for D07–D10 (.gx); each direction overrides skin. */
+.gx { font-family: "Archivo", sans-serif; }
+.gx em { font-style: normal; }
+.gx [class$="-sp"] { flex: 1; }
+.gx .gx-top, .gx .gx-bot { position: absolute; left: 70px; right: 70px; display: flex; align-items: center; gap: 24px; font-size: 22px; z-index: 3; }
+.gx .gx-top { top: 30px; height: 56px; }
+.gx .gx-top b { font-size: 30px; }
+.gx .gx-bot { bottom: 24px; height: 56px; font-size: 20px; }
+.gx .gx-h { position: absolute; left: 70px; right: 520px; top: 110px; font-size: 62px; font-weight: 900; line-height: 1.02; display: flex; flex-direction: column; gap: 8px; }
+.gx .gx-h small { font-size: 28px; font-weight: 600; }
+.gx .gx-cbox { position: absolute; left: 110px; top: 170px; width: 1060px; display: flex; flex-direction: column; gap: 26px; }
+.gx .gx-cun { display: flex; gap: 16px; font-size: 30px; font-weight: 800; }
+.gx .gx-cun span { padding: 6px 20px; }
+.gx .gx-cbox h1 { font-size: 104px; line-height: .98; font-weight: 900; letter-spacing: -.02em; }
+.gx .gx-cbox h1 em { display: block; }
+.gx .gx-wb { font-size: 34px; font-weight: 700; }
+.gx .gx-gr { font-size: 26px; }
+.gx .gx-cchar { position: absolute; right: 90px; bottom: 0; height: 900px; }
+.gx .gx-cbrand { position: absolute; left: 110px; bottom: 60px; display: flex; align-items: center; gap: 24px; font-size: 26px; font-weight: 700; }
+.gx .gx-track { position: absolute; left: 70px; right: 70px; top: 330px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 22px; }
+.gx .gx-st { position: relative; padding: 26px 20px; display: flex; flex-direction: column; gap: 8px; align-items: flex-start; transition: transform .35s, background .35s, opacity .35s; opacity: .55; }
+.gx .gx-st.act, .gx .gx-st.past { opacity: 1; }
+.gx .gx-st.act { transform: translateY(-12px); }
+.gx .gx-st b { font-size: 30px; font-weight: 800; }
+.gx .gx-st small { font-size: 22px; }
+.gx .gx-n { position: absolute; right: 16px; top: 10px; font-size: 44px; font-weight: 900; opacity: .35; }
+.gx .gx-det { position: absolute; left: 420px; right: 70px; top: 640px; padding: 26px 34px; }
+.gx .gx-det span { font-size: 22px; font-weight: 700; }
+.gx .gx-det h3 { font-size: 44px; font-weight: 900; margin: 4px 0; }
+.gx .gx-det p { font-size: 30px; line-height: 1.3; }
+.gx .gx-pat { position: absolute; left: 420px; right: 70px; top: 900px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; font-size: 24px; font-weight: 700; }
+.gx .gx-pat span { padding: 6px 16px; }
+.gx .gx-tchar { position: absolute; left: 60px; bottom: 80px; height: 420px; }
+.gx .gx-gl { position: absolute; left: 90px; top: 320px; }
+.gx .gx-pts { position: absolute; left: 560px; right: 400px; top: 290px; display: flex; flex-direction: column; gap: 18px; }
+.gx .gx-pc { display: flex; gap: 20px; padding: 18px 24px; }
+.gx .gx-pc > span { flex: none; width: 60px; height: 60px; display: grid; place-items: center; }
+.gx .gx-pc h3 { font-size: 30px; font-weight: 800; }
+.gx .gx-pc p { font-size: 24px; line-height: 1.28; margin-top: 4px; }
+.gx .gx-keys { position: absolute; left: 90px; top: 760px; width: 420px; display: flex; flex-wrap: wrap; gap: 10px; font-size: 24px; font-weight: 700; }
+.gx .gx-keys span { padding: 6px 14px; }
+.gx .gx-nchar { position: absolute; right: 50px; bottom: 80px; height: 520px; }
+.gx .gx-tbl { position: absolute; left: 70px; width: 1180px; top: 290px; border-collapse: separate; border-spacing: 0 8px; font-size: 25px; line-height: 1.22; }
+.gx .gx-tbl th, .gx .gx-tbl td { padding: 14px 18px; text-align: left; vertical-align: middle; }
+.gx .gx-tbl thead th { font-size: 30px; font-weight: 900; }
+.gx .gx-tbl thead svg { vertical-align: -5px; }
+.gx .gx-tbl tbody th { width: 250px; font-size: 22px; font-weight: 700; }
+.gx .gx-qz { position: absolute; left: 1300px; right: 70px; top: 290px; padding: 28px; }
+.gx .gx-quiz .quiz-q { font-size: 27px; }
+.gx .gx-quiz .quiz-btn { font-size: 26px; padding: 8px 22px; }
+.gx .gx-quiz .quiz-fb { font-size: 22px; }
+.gx .gx-qchar { position: absolute; right: 80px; bottom: 80px; height: 300px; }
+.gx .gx-eh { position: absolute; left: 70px; top: 80px; font-size: 76px; font-weight: 900; display: flex; flex-direction: column; gap: 6px; }
+.gx .gx-eh small { font-size: 32px; font-weight: 700; }
+.gx .gx-qrs { position: absolute; left: 70px; top: 300px; display: flex; gap: 28px; }
+.gx .gx-qr { padding: 16px; display: flex; flex-direction: column; gap: 10px; align-items: center; }
+.gx .gx-qr img { width: 250px; height: 250px; background: #fff; padding: 8px; }
+.gx .gx-qr figcaption { font-size: 25px; font-weight: 800; }
+.gx .gx-comm { position: absolute; left: 70px; top: 700px; font-size: 36px; font-weight: 900; }
+.gx .gx-exit { position: absolute; left: 70px; width: 1180px; top: 790px; }
+.gx .gx-echar { position: absolute; right: 70px; bottom: 80px; height: 620px; }
