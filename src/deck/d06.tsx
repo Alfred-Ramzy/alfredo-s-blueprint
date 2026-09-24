@@ -80,7 +80,7 @@ const Concept = ({ step }: { step: number }) => (
     {NODES.map((n, i) => {
       const p = NET.points[i]!;
       return (
-        <div key={n.k} className={cx("d06-nd", i < 2 ? "l" : "r", step >= i && "on")} style={{ left: n.x + 260 - 130, top: n.y + 170 - 50 }}>
+        <div key={n.k} className={cx("d06-nd", i < 2 ? "l" : "r", step >= i && "on")} style={{ left: n.x + 260, top: n.y + 170 }}>
           <span className="d06-ic big"><n.I size={40} /></span>
           <div className="d06-ann"><b>{String.fromCharCode(65 + i)}. {p.head}</b><p>{p.body}</p></div>
         </div>
