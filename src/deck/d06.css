@@ -1,0 +1,98 @@
+.d06 { background-color: #0b2a6b; background-image: linear-gradient(rgba(255,255,255,.14) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.14) 1px, transparent 1px), linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px); background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px; color: #fff; font-family: "Archivo", sans-serif; }
+.d06 em { font-style: normal; color: var(--yellow); }
+.d06-sp { flex: 1; }
+.d06 .char { filter: drop-shadow(0 0 0 #fff) drop-shadow(0 10px 20px rgba(0,0,0,.35)); }
+.d06-reg { position: absolute; width: 40px; height: 40px; border: 3px solid var(--yellow); z-index: 4; }
+.d06-reg.tl { left: 24px; top: 24px; border-right: 0; border-bottom: 0; }
+.d06-reg.tr { right: 24px; top: 24px; border-left: 0; border-bottom: 0; }
+.d06-reg.bl { left: 24px; bottom: 24px; border-right: 0; border-top: 0; }
+.d06-reg.br { right: 24px; bottom: 24px; border-left: 0; border-top: 0; }
+.d06-hd, .d06-ft { position: absolute; left: 80px; right: 80px; display: flex; align-items: center; gap: 28px; font-family: "JetBrains Mono", monospace; font-size: 21px; letter-spacing: .06em; z-index: 3; }
+.d06-hd { top: 34px; height: 50px; border-bottom: 2px solid rgba(255,255,255,.6); }
+.d06-hd b { color: var(--yellow); }
+.d06-ft { bottom: 30px; height: 50px; border-top: 2px solid rgba(255,255,255,.6); }
+.d06-h { position: absolute; left: 80px; top: 110px; font-size: 64px; font-weight: 800; line-height: 1; letter-spacing: -.01em; display: flex; flex-direction: column; gap: 10px; }
+.d06-h small { font-family: "JetBrains Mono", monospace; font-size: 26px; color: var(--yellow); font-weight: 500; }
+.d06-ic { display: inline-grid; place-items: center; width: 60px; height: 60px; border: 2px solid #fff; background: #0b2a6b; flex: none; }
+.d06-ic.big { width: 80px; height: 80px; border-color: var(--yellow); color: var(--yellow); }
+
+.d06-cframe { position: absolute; left: 110px; top: 130px; width: 700px; height: 850px; border: 2px dashed rgba(255,255,255,.7); }
+.d06-dim.h { position: absolute; left: 0; right: 0; top: -30px; border-top: 2px solid var(--yellow); }
+.d06-dim.h i { position: absolute; left: 50%; top: -16px; transform: translateX(-50%); background: #0b2a6b; padding: 0 12px; font: 500 20px "JetBrains Mono", monospace; color: var(--yellow); font-style: normal; }
+.d06-cchar { left: 30px; bottom: 0; height: 800px; }
+.d06-ctitle { position: absolute; left: 900px; right: 80px; top: 160px; font-size: 88px; line-height: 1; font-weight: 900; letter-spacing: -.02em; }
+.d06-block { position: absolute; left: 900px; right: 80px; top: 560px; border-collapse: collapse; font-family: "JetBrains Mono", monospace; font-size: 24px; }
+.d06-block th, .d06-block td { border: 2px solid #fff; padding: 12px 18px; text-align: left; }
+.d06-block th { width: 190px; color: var(--yellow); font-weight: 500; font-size: 21px; }
+.d06-block td.big { font-size: 64px; font-weight: 700; font-family: "Archivo", sans-serif; }
+
+.d06-axis { position: absolute; left: 120px; right: 120px; top: 560px; height: 3px; background: #fff; }
+.d06-tick { position: absolute; top: 12px; transform: translateX(-50%); font: 500 22px "JetBrains Mono", monospace; }
+.d06-tick::before { content: ""; position: absolute; left: 50%; top: -24px; width: 2px; height: 20px; background: #fff; }
+.d06-span { position: absolute; top: 0; }
+.d06-span.hi { top: 250px; }
+.d06-span.lo { top: 610px; }
+.d06-brk { position: absolute; left: 0; right: 0; height: 30px; border: 3px solid var(--yellow); }
+.d06-span.hi .d06-brk { top: 270px; border-bottom: 0; }
+.d06-span.lo .d06-brk { top: -20px; border-top: 0; height: 26px; }
+.d06-lab { position: absolute; left: 0; width: 420px; display: flex; gap: 14px; }
+.d06-span.hi .d06-lab { top: 0; }
+.d06-span.lo .d06-lab { top: 30px; }
+.d06-lab b { display: block; font-size: 30px; font-weight: 800; line-height: 1.05; }
+.d06-lab small { font: 500 22px "JetBrains Mono", monospace; color: var(--yellow); }
+.d06-lab p { font-size: 24px; line-height: 1.22; margin-top: 6px; max-width: 340px; }
+.d06-vec { position: absolute; left: 700px; right: 80px; top: 880px; font-family: "JetBrains Mono", monospace; }
+.d06-vec span { font-size: 20px; color: var(--yellow); }
+.d06-vec svg { width: 100%; height: 20px; fill: none; stroke: var(--yellow); stroke-width: 3; display: block; margin: 6px 0; }
+.d06-vec p { font-size: 26px; font-family: "Archivo", sans-serif; font-weight: 700; }
+.d06-tchar { left: 90px; bottom: 90px; height: 290px; }
+
+.d06-net { position: absolute; left: 260px; top: 170px; width: 1400px; height: 800px; overflow: visible; }
+.d06-wire { stroke: rgba(255,255,255,.3); stroke-width: 3; stroke-dasharray: 10 8; fill: none; transition: stroke .4s; }
+.d06-wire.on { stroke: var(--yellow); }
+.d06-hub { fill: #0b2a6b; stroke: #fff; stroke-width: 3; }
+.d06-hubl { position: absolute; left: 960px; top: 600px; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; font: 700 28px "JetBrains Mono", monospace; }
+.d06-nd { position: absolute; width: 80px; height: 80px; margin: -40px 0 0 -40px; opacity: .35; transition: opacity .4s; }
+.d06-nd.on { opacity: 1; }
+.d06-ann { position: absolute; top: -8px; width: 470px; }
+.d06-nd.l .d06-ann { right: 100px; text-align: right; }
+.d06-nd.r .d06-ann { left: 100px; width: 440px; }
+.d06-ann b { font-size: 28px; font-weight: 800; display: block; color: var(--yellow); line-height: 1.1; }
+.d06-ann p { font-size: 25px; line-height: 1.25; margin-top: 4px; }
+.d06-eq { position: absolute; left: 80px; right: 80px; bottom: 96px; text-align: center; font: 700 28px "JetBrains Mono", monospace; color: var(--yellow); }
+.d06-nchar { left: 850px; bottom: 150px; height: 180px; display: none; }
+.slide.d06 .d06-nchar { display: block; left: 1640px; bottom: 90px; height: 250px; }
+
+.d06-diag { position: absolute; left: 80px; right: 80px; top: 200px; height: 190px; }
+.d06-diag span { position: absolute; display: flex; flex-direction: column; align-items: center; gap: 4px; font: 500 20px "JetBrains Mono", monospace; }
+.d06-car { left: 20px; top: 40px; }
+.d06-edge { left: 230px; top: 50px; color: var(--yellow); }
+.d06-cloud { right: 20px; top: 20px; }
+.d06-diag i { position: absolute; top: 80px; height: 0; border-top: 3px dashed #fff; font-style: normal; }
+.d06-diag i em { position: absolute; left: 50%; top: 8px; transform: translateX(-50%); white-space: nowrap; font: 500 20px "JetBrains Mono", monospace; }
+.d06-d1 { left: 130px; width: 90px; border-color: var(--yellow) !important; }
+.d06-d1 em { top: -34px !important; }
+.d06-d2 { left: 340px; right: 200px; }
+.d06-spec { position: absolute; left: 80px; width: 1150px; top: 410px; border-collapse: collapse; font-size: 25px; line-height: 1.2; }
+.d06-spec th, .d06-spec td { border: 2px solid rgba(255,255,255,.7); padding: 10px 16px; text-align: left; }
+.d06-spec thead th { font: 700 22px "JetBrains Mono", monospace; color: var(--yellow); }
+.d06-spec thead svg { vertical-align: -4px; }
+.d06-spec tbody th { font: 500 21px "JetBrains Mono", monospace; width: 240px; }
+.d06-qz { position: absolute; left: 1280px; right: 80px; top: 410px; border: 2px solid var(--yellow); padding: 26px; }
+.d06-tag { font: 700 20px "JetBrains Mono", monospace; background: var(--yellow); color: var(--ink); padding: 2px 10px; }
+.d06-quiz { margin-top: 14px; }
+.d06-quiz .quiz-q { font-size: 27px; }
+.d06-quiz .quiz-btn { border-radius: 0; padding: 8px 24px; font-size: 26px; }
+.d06-quiz .quiz-fb { font-size: 23px; }
+.d06-qchar { right: 90px; bottom: 90px; height: 0; display: none; }
+
+.d06-parts { position: absolute; left: 80px; top: 300px; display: flex; gap: 30px; }
+.d06-parts figure { border: 2px solid #fff; padding: 16px; display: flex; flex-direction: column; gap: 10px; position: relative; }
+.d06-pn { font: 700 20px "JetBrains Mono", monospace; color: var(--yellow); }
+.d06-parts img { width: 250px; height: 250px; background: #fff; padding: 10px; }
+.d06-parts figcaption { font-size: 26px; font-weight: 800; }
+.d06-note { position: absolute; left: 80px; width: 1180px; top: 790px; border-left: 4px solid var(--yellow); padding-left: 22px; }
+.d06-note b { font: 700 20px "JetBrains Mono", monospace; color: var(--yellow); }
+.d06-note p { font-size: 30px; line-height: 1.25; margin-top: 6px; }
+.d06-comm { position: absolute; left: 80px; top: 710px; font-size: 32px; font-weight: 800; }
+.d06-echar { right: 90px; bottom: 90px; height: 560px; }

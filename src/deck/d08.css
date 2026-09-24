@@ -1,0 +1,20 @@
+/* Immersive Layered Infographic — deep navy with layered bands */
+.d08 { background: linear-gradient(160deg, #06163f 0%, #0d2f86 60%, #1f5bd8 100%); color: #fff; }
+.d08 .gx-deco.a { position: absolute; left: -200px; right: -200px; bottom: 120px; height: 360px; background: rgba(255,255,255,.06); transform: skewY(-6deg); }
+.d08 .gx-deco.b { position: absolute; left: -200px; right: -200px; bottom: -40px; height: 240px; background: rgba(255,212,0,.12); transform: skewY(-6deg); }
+.d08 .gx-top { border-bottom: 3px solid var(--yellow); }
+.d08 .gx-top b, .d08 em, .d08 .gx-h small { color: var(--yellow); }
+.d08 .gx-bot { border-top: 1px solid rgba(255,255,255,.4); }
+.d08 .gx-cun span { background: var(--yellow); color: #06163f; }
+.d08 .gx-st { background: rgba(255,255,255,.08); border-top: 8px solid rgba(255,255,255,.3); }
+.d08 .gx-st.act { background: var(--yellow); color: #06163f; border-top-color: #fff; }
+.d08 .gx-det, .d08 .gx-qz { background: rgba(0,0,0,.28); border-left: 10px solid var(--yellow); }
+.d08 .gx-pc { background: rgba(255,255,255,.08); border-left: 8px solid rgba(255,255,255,.2); opacity: .3; transition: .4s; }
+.d08 .gx-pc.on { opacity: 1; border-left-color: var(--yellow); }
+.d08 .gx-pc > span { background: var(--yellow); color: #06163f; }
+.d08 .gx-pat span, .d08 .gx-keys span { background: rgba(255,212,0,.18); border: 2px solid var(--yellow); }
+.d08 .gx-gl { color: #fff; }
+.d08 .gx-tbl tbody tr > * { background: rgba(255,255,255,.08); }
+.d08 .gx-tbl tbody th { color: var(--yellow); }
+.d08 .gx-qr { background: rgba(255,255,255,.1); border-bottom: 6px solid var(--yellow); }
+.d08 .gx-exit { color: #fff; }

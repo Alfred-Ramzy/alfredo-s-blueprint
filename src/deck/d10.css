@@ -1,0 +1,20 @@
+/* Character-Led Signature — bold ALFREDO yellow/royal with big character */
+.d10 { background: radial-gradient(circle at 78% 60%, #2a6bff 0%, #1440b8 40%, #0b1f4d 100%); color: #fff; }
+.d10 .gx-deco.a { position: absolute; right: 60px; bottom: 60px; width: 860px; height: 860px; border-radius: 50%; background: var(--yellow); }
+.d10 .gx-deco.b { position: absolute; right: 20px; bottom: 20px; width: 940px; height: 940px; border-radius: 50%; border: 6px dashed rgba(255,255,255,.5); }
+.d10 .gx-top, .d10 .gx-bot { background: rgba(0,0,0,.25); border-radius: 999px; padding: 0 30px; }
+.d10 .gx-top b, .d10 em, .d10 .gx-h small, .d10 .gx-eh small { color: var(--yellow); }
+.d10 .gx-cun span { background: var(--yellow); color: #0b1f4d; border-radius: 999px; }
+.d10 .gx-st { background: #fff; color: #0b1f4d; border-radius: 26px; }
+.d10 .gx-st.act { background: var(--yellow); box-shadow: 0 16px 40px rgba(0,0,0,.35); }
+.d10 .gx-det, .d10 .gx-pc, .d10 .gx-qz { background: #fff; color: #0b1f4d; border-radius: 26px; }
+.d10 .gx-pc { opacity: .3; transition: .4s; }
+.d10 .gx-pc.on { opacity: 1; }
+.d10 .gx-pc > span { background: #1f5bd8; color: #fff; border-radius: 16px; }
+.d10 .gx-pat span, .d10 .gx-keys span { background: var(--yellow); color: #0b1f4d; border-radius: 999px; }
+.d10 .gx-gl { color: var(--yellow); }
+.d10 .gx-tbl tbody tr > * { background: rgba(255,255,255,.12); }
+.d10 .gx-tbl tbody th { color: var(--yellow); }
+.d10 .gx-qr { background: #fff; color: #0b1f4d; border-radius: 24px; }
+.d10 .gx-cchar { height: 960px; }
+.d10 .gx-echar { height: 720px; }

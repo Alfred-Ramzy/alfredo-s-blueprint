@@ -1,0 +1,18 @@
+/* Storyboard Journey — comic panels on warm paper */
+.d07 { background: #fff8e1; color: #0b1f4d; }
+.d07 .gx-top, .d07 .gx-bot { background: #0b1f4d; color: #fff; padding: 0 24px; border-radius: 14px; }
+.d07 .gx-top b { color: var(--yellow); }
+.d07 .gx-h em, .d07 .gx-cbox h1 em { color: #1f5bd8; }
+.d07 .gx-h small { color: #1f5bd8; }
+.d07 .gx-deco.a { position: absolute; inset: 40px; border: 6px solid #0b1f4d; border-radius: 28px; }
+.d07 .gx-cun span { background: var(--yellow); border: 4px solid #0b1f4d; border-radius: 12px; }
+.d07 .gx-st, .d07 .gx-det, .d07 .gx-pc, .d07 .gx-qz, .d07 .gx-qr { background: #fff; border: 5px solid #0b1f4d; border-radius: 20px; box-shadow: 8px 8px 0 #0b1f4d; }
+.d07 .gx-st.act { background: var(--yellow); }
+.d07 .gx-det { border-radius: 40px 40px 40px 6px; }
+.d07 .gx-pc > span { background: #1f5bd8; color: #fff; border-radius: 50%; }
+.d07 .gx-pc { opacity: .3; transition: opacity .4s; }
+.d07 .gx-pc.on { opacity: 1; }
+.d07 .gx-pat span, .d07 .gx-keys span { background: #1f5bd8; color: #fff; border-radius: 999px; }
+.d07 .gx-gl { color: #1f5bd8; }
+.d07 .gx-tbl tbody tr > * { background: #fff; border-top: 4px solid #0b1f4d; border-bottom: 4px solid #0b1f4d; }
+.d07 .gx-tbl thead th { color: #1f5bd8; }
