@@ -19,8 +19,8 @@ export const DIRECTIONS: Direction[] = [
   { id: "D04", name: "ALFREDO Neo-Brutal Classroom", cls: "d04", slides: D04 },
   { id: "D05", name: "Glass Future Lab", cls: "d05", slides: D05 },
   { id: "D06", name: "Technical Blueprint", cls: "d06", slides: D06 },
-  { id: "D07", name: "Storyboard Journey", cls: "d07", slides: D07 },
-  { id: "D08", name: "Immersive Layered Infographic", cls: "d08", slides: D08 },
-  { id: "D09", name: "Premium Minimal", cls: "d09", slides: D09 },
-  { id: "D10", name: "Character-Led ALFREDO Signature", cls: "d10", slides: D10 },
+  { id: "D07", name: "Storyboard Journey", cls: "d07 gx", slides: D07 },
+  { id: "D08", name: "Immersive Layered Infographic", cls: "d08 gx", slides: D08 },
+  { id: "D09", name: "Premium Minimal", cls: "d09 gx", slides: D09 },
+  { id: "D10", name: "Character-Led ALFREDO Signature", cls: "d10 gx", slides: D10 },
 ];
