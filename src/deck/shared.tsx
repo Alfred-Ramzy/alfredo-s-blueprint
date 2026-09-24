@@ -87,7 +87,7 @@ export const Footer = ({ className = "", logo = true }: { className?: string; lo
 );
 
 export const QR = ({ i, className = "" }: { i: number; className?: string }) => {
-  const q = END.qrs[i];
+  const q = END.qrs[i]!;
   return (
     <figure className={"qr " + className}>
       <img src={q.src} alt={q.label + " QR code"} draggable={false} />
@@ -135,8 +135,8 @@ export function Quiz({ className = "", labels = ["Cloud", "Edge"] }: { className
 
 /* Connected globe (inline SVG) */
 export function GlobeNet({ className = "", stroke = "currentColor", accent = "#FFD400", size = 520 }: { className?: string; stroke?: string; accent?: string; size?: number }) {
-  const nodes = [[120, 170], [390, 150], [460, 300], [330, 440], [140, 380], [260, 90], [250, 270]];
-  const links = [[0, 5], [5, 1], [1, 2], [2, 3], [3, 4], [4, 0], [6, 0], [6, 1], [6, 2], [6, 3], [6, 4], [0, 2], [5, 3]];
+  const nodes: [number, number][] = [[120, 170], [390, 150], [460, 300], [330, 440], [140, 380], [260, 90], [250, 270]];
+  const links: [number, number][] = [[0, 5], [5, 1], [1, 2], [2, 3], [3, 4], [4, 0], [6, 0], [6, 1], [6, 2], [6, 3], [6, 4], [0, 2], [5, 3]];
   return (
     <svg className={"globe " + className} viewBox="0 0 520 520" width={size} height={size} fill="none" stroke={stroke}>
       <circle cx="260" cy="260" r="220" strokeWidth="3" />
@@ -144,7 +144,7 @@ export function GlobeNet({ className = "", stroke = "currentColor", accent = "#F
       <ellipse cx="260" cy="260" rx="170" ry="220" strokeWidth="2" opacity=".35" />
       <path d="M40 260h440M70 160h380M70 360h380" strokeWidth="2" opacity=".45" />
       {links.map(([a, b], i) => (
-        <path key={i} className="gl-link" d={`M${nodes[a][0]} ${nodes[a][1]} Q260 260 ${nodes[b][0]} ${nodes[b][1]}`} stroke={accent} strokeWidth="3" style={{ animationDelay: `${i * 60}ms` }} />
+        <path key={i} className="gl-link" d={`M${nodes[a]![0]} ${nodes[a]![1]} Q260 260 ${nodes[b]![0]} ${nodes[b]![1]}`} stroke={accent} strokeWidth="3" style={{ animationDelay: `${i * 60}ms` }} />
       ))}
       {nodes.map(([x, y], i) => (
         <circle key={i} cx={x} cy={y} r={i === 6 ? 14 : 10} fill={accent} stroke="none" />
